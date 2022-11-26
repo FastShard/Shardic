@@ -13,7 +13,7 @@ cd opt && sudo make && sudo make install && cd ~/ && sudo rm -rf ~/opt
 
 # Installing Fonts
 echo "[ DEBUG ] Installing and Configuring Fonts"
-cd ~/ && curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh | bash && sudo rm -rf ~/install_manual.sh
+cd ~/ && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip && sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts
 
 # Setup Configs
 echo "[ DEBUG ] Configuring bspwm"
@@ -23,3 +23,6 @@ echo "[ DEBUG ] Configuring dunst"
 echo "[ DEBUG ] Configuring polybar"
 echo "[ DEBUG ] Configuring alacritty"
 cd ~/ && git clone https://github.com/0xGast/hord-fast-rice && cd hord-fast-rice && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice
+
+# Add Permissions
+cd ~/.config/ && sudo chmod +x * && sudo chmod +x */*/ && sudo chmod +x */*/* && sudo chmod +x */*/*/*
