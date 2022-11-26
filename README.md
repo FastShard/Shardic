@@ -41,7 +41,7 @@
 1. Install the Rice ( Auto )
 
     ```bash
-    curl https://raw.githubusercontent.com/0xGast/FastShard/main/Installer/install.sh | sh
+    curl https://raw.githubusercontent.com/FastShard/Shardic/main/Installer/install.sh | sh
     ```
 <br />
 
@@ -60,7 +60,7 @@
     
       You need to open Alacritty and execute `cd .mozilla/firefox/` then you can list the files by doing `ls`.
       After that you have to find the folder that has `.default-release` at the end of it and then cd inside it.
-      If youre inside the profile Directory you can now execute `mkdir chrome && cd chrome` after that you can move the files from the [Firefox Files](https://github.com/0xGast/FastShard/tree/main/firefox) inside the chrome folder! When you're done close Firefox using ctrl + q!
+      If youre inside the profile Directory you can now execute `mkdir chrome && cd chrome` after that you can move the files from the [Firefox Files](https://github.com/FastShard/Shardic/tree/main/firefox) inside the chrome folder! When you're done close Firefox using ctrl + q!
       
 # Contact Me
 
