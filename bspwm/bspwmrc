@@ -22,6 +22,8 @@ bspc config active_border_color         "#22292B"
 ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
+xrandr --output `xrandr | grep " connected"|cut -f1 -d" "`  --mode 1920x1080
+
 ~/.config/bspwm/bar/launch.sh &
 /usr/bin/dunst &
 xsetroot -cursor_name left_ptr &
