@@ -1,0 +1,119 @@
+/**
+ * @name Hord
+ * @version 1.0.0
+ * @author Gast#5037
+ * @authorId 621713529543720970
+ * @description Fit the Hord!
+ * @source https://github.com/0xGast/hord-fast-rice/
+ * @website https://0xGast.github.io/
+ * @donate https://github.com/sponsors/0xGast/
+ * @invite unixporn
+*/
+
+/* Created By TheCommieAxolotl but i removed some libraries and made some upgrades */
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/Touchup.css");
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/UserBadges.css");
+@import url("https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap");
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Ultra/Modules/Clients/BetterDiscord.css");
+:root,
+.theme-dark {
+    --version1_0_6: none;
+    --text-normal: #b7b5b8;
+    --text-muted: #4a4a52;
+    --text-link: #88807D;
+    --text-positive: #50dc7d;
+    --text-warning: #8d4949;
+    --text-danger: #8d4949;
+    --text-brand: #88807D;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #b7b5b8;
+    --interactive-active: #c9ced0;
+    --interactive-muted: #4f545c;
+    --background-primary: #12161b;
+    --background-secondary: #12161b;
+    --background-secondary-alt: #12161b;
+    --background-tertiary: #12161b;
+    --background-accent: #4f545c;
+    --background-floating: #12161b;
+    --channeltextarea-background: #12161b;
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-warning-foreground: #88807D;
+    --info-danger-text: #fff;
+    --info-help-text: #fff;
+    --status-warning-text: #12161b;
+    --background-mentioned: #12161b;
+    --background-mentioned-hover: #12161b;
+    --background-message-hover: rgba(4, 4, 5, 0.07);
+    --scrollbar-auto-thumb: #88807D;
+    --brand-experiment: #88807D;
+    --brand-experiment-hover: #6f6af64d;
+    --brand-experiment-560: #88807D;
+    --channels-default: #b7b5b8;
+    --selected-indicator: #97ffa5;
+    --hover-indicator: #b7b5b8;
+    --font: "Lato";
+    --code-font: "Source Code Pro";
+    --boost-bar: none;
+}
+
+.icon-1zKOXL {
+    display: none;
+}
+.guildIcon-2I5sfu{
+    display: none;
+}
+
+.iconSizeSmol-qsFaRK {
+    display: none;
+}
+
+.iconInactive-26M06U{
+    display: none;
+}
+
+.expandedFolderIconWrapper-3RwQpD {
+    display: flex;
+}
+
+.closedFolderIconWrapper-3tRb2d{
+    display: none;
+}
+
+
+.wrapper-28eC3z {
+    display: flex;
+}
+
+.expandedFolderBackground-1kSAf6 {
+    display: none;
+}
+
+/* .collapsed-uGXEbi{
+    display: none;
+} */
+
+
+/* .title-31SJ6t {
+    display: none;
+} */
+
+/* .container-ZMc96U{
+    display: none;
+}
+
+.themed-Hp1KC_{
+    display: none;
+}  */
+/* 
+.button-2fCJ0o{
+    display: none;
+}
+
+.button-3BaQ4X{
+    display: none;
+} 
+ */
