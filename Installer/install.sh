@@ -1,19 +1,19 @@
 # Update the system
 echo "[ DEBUG ] Updating the system"
-sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-get update -y && sudo apt-get upgrade -y > /dev/null
 
 # Install Dependencies
 echo "[ DEBUG ] Installing Usefull Dependencies via apt"
-sudo apt-get install libxcb-util-dev feh xdo rofi flameshot wget libx11-dev curl gpg git libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev bspwm sxhkd zathura ranger polybar dunst build-essential ninja-build nemo thunar python3 python3-pip python3-setuptools alacritty mpv cmus neofetch bashtop vim apt-transport-https golang -y
+sudo apt-get install libxcb-util-dev feh xdo rofi flameshot wget libx11-dev curl gpg git libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev bspwm sxhkd zathura ranger polybar dunst build-essential ninja-build nemo thunar python3 python3-pip python3-setuptools alacritty mpv cmus neofetch bashtop vim apt-transport-https golang -y > /dev/null
 
 # Install OPT Build for Double Borders
 echo "[ DEBUG ] Installing wmutils/opt"
-cd ~/ && git clone https://github.com/wmutils/opt 
-cd opt && sudo make && sudo make install && cd ~/ && sudo rm -rf ~/opt
+cd ~/ && git clone https://github.com/wmutils/opt > /dev/null
+cd opt && sudo make && sudo make install && cd ~/ && sudo rm -rf ~/opt > /dev/null
 
 # Installing Fonts
 echo "[ DEBUG ] Installing and Configuring Fonts"
-cd ~/ && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip && sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts
+cd ~/ && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip && sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts > /dev/null
 
 # Setup Configs
 echo "[ DEBUG ] Configuring bspwm"
@@ -22,7 +22,8 @@ echo "[ DEBUG ] Configuring zathura"
 echo "[ DEBUG ] Configuring dunst"
 echo "[ DEBUG ] Configuring polybar"
 echo "[ DEBUG ] Configuring alacritty"
-cd ~/ && git clone https://github.com/0xGast/hord-fast-rice && cd hord-fast-rice && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice
+cd ~/ && git clone https://github.com/0xGast/hord-fast-rice && cd hord-fast-rice && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice > /dev/null
 
 # Add Permissions
-cd ~/.config/ && sudo chmod +x * && sudo chmod +x */*/ && sudo chmod +x */*/* && sudo chmod +x */*/*/*
+echo "[ DEBUG ] Adding Permissions"
+cd ~/.config/ && sudo chmod +x * && sudo chmod +x */*/ && sudo chmod +x */*/* && sudo chmod +x */*/*/* > /dev/null
