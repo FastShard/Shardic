@@ -1,9 +1,35 @@
-# 🍁 Hord
+# 🍁 Hord [ BSPWM ]
 
 ![image](https://user-images.githubusercontent.com/117211251/204068505-ee1de7d1-0b0e-4cc4-ad58-4f2e172320dc.png)
 
 ![image](https://user-images.githubusercontent.com/117211251/204068509-3926865b-8363-4d9e-81f7-56d3edaea968.png)
 
+# Keybinds
+
+1. APPS
+
+   ```
+   LAlt + T = Alacritty
+   LAlt + SPACE = Rofi
+   
+   WinKey + LAlt +
+   ```
+   
+2. WM
+
+   ```
+   WinKey + LAlt + R = Restart BSPWM
+   WinKey + LAlt + Q = Exit BSPWM
+   ```
+
+3. Windows
+
+   ```
+   WinKey + S = Floating Window
+   WinKey + T = Tiling Window
+   WinKey + F = Fullscreen Window
+   WinKey + LShift + T = Pseudo Tiling Window
+   ```
 
 # Installation
 
