@@ -1,1 +1,38 @@
-# hord-fast-rice
+# 🍁 Hord
+
+![image](https://user-images.githubusercontent.com/117211251/204068505-ee1de7d1-0b0e-4cc4-ad58-4f2e172320dc.png)
+
+![image](https://user-images.githubusercontent.com/117211251/204068509-3926865b-8363-4d9e-81f7-56d3edaea968.png)
+
+
+# Installation
+
+1. Install the Rice ( Auto )
+
+    ```bash
+    curl https://raw.githubusercontent.com/0xGast/hord-fast-rice/main/Installer/install.sh | sh
+    ```
+<br />
+
+2. Rice Firefox ( Manuall )
+  
+    * Enabling the Modules
+   
+      Firstly you need to visit `about:config` by puting it in your URL Bar and Clicking Enter. It will display a Popup with the message I accept the risk, click yes and then search for these but one at a time and set everything to **True** by double Clicking them!
+      `toolkit.legacyUserProfileCustomizations.stylesheets` <br />
+      `layers.acceleration.force-enabled`<br />
+      `gfx.webrender.all`<br />
+      `svg.context-properties.content.enabled`<br />
+      <br />
+      
+    * Creating the Folder and Files
+    
+      You need to open Alacritty and execute `cd .mozilla/firefox/` then you can list the files by doing `ls`.
+      After that you have to find the folder that has `.default-release` at the end of it and then cd inside it.
+      If youre inside the profile Directory you can now execute `mkdir chrome && cd chrome` after that you can move the files from the [Firefox Files](https://github.com/0xGast/hord-fast-rice/tree/main/firefox) inside the chrome folder! When you're done close Firefox using ctrl + q!
+      
+# Contact Me
+
+Twitter   - [@0xGast](https://twitter.com/0xGast)
+| Github    - [@0xGast](https://github.com/0xGast)
+| Tryhackme - [@0xGast](https://tryhackme.com/p/0xGast)
