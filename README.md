@@ -11,8 +11,6 @@
    ```
    LAlt + T = Alacritty
    LAlt + SPACE = Rofi
-   
-   WinKey + LAlt +
    ```
    
 2. WM
@@ -22,13 +20,20 @@
    WinKey + LAlt + Q = Exit BSPWM
    ```
 
-3. Windows
+3. STATES
 
    ```
    WinKey + S = Floating Window
    WinKey + T = Tiling Window
    WinKey + F = Fullscreen Window
    WinKey + LShift + T = Pseudo Tiling Window
+   ```
+   
+4. WINDOWS
+
+   ```
+   WinKey + MBLClick = Move Window
+   WinKey + MBRClick = Resize Window
    ```
 
 # Installation
