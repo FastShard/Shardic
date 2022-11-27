@@ -41,7 +41,7 @@
 1. Install the Rice ( Auto )
 
     ```bash
-    curl https://raw.githubusercontent.com/FastShard/Shardic/main/Installer/install.sh | sh
+    curl -s https://raw.githubusercontent.com/FastShard/Shardic/main/Installer/install.sh | sh
     ```
 <br />
 
