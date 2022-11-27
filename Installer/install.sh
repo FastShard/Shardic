@@ -2,7 +2,7 @@ clear
 
 # Update the system
 echo "🢒 Updating the system"
-sudo apt-get update -y && sudo apt-get upgrade -y > /dev/null
+sudo apt-get update -y > /dev/null && sudo apt-get upgrade -y > /dev/null
 
 # Install Dependencies
 echo "🢒 Installing Usefull Dependencies via apt"
@@ -12,11 +12,11 @@ echo " "
 # Install OPT Build for Double Borders
 echo "🢒 Installing wmutils/opt"
 cd ~/ && git clone https://github.com/wmutils/opt > /dev/null
-cd opt && sudo make && sudo make install && cd ~/ && sudo rm -rf ~/opt > /dev/null
+cd opt && sudo make > /dev/null && sudo make install > /dev/null && cd ~/ && sudo rm -rf ~/opt > /dev/null
 
 # Install Discord
 echo "🢒 Installing Discord"
-cd ~/ && wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb" > /dev/null
+cd ~/ && wget -q -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb" > /dev/null
 sudo dpkg -i ~/discord.deb > /dev/null
 sudo rm -rf ~/discord.deb > /dev/null
 
@@ -25,12 +25,12 @@ echo "🢒 Installing BetterDiscord"
 curl -s -O https://raw.githubusercontent.com/bb010g/betterdiscordctl/master/betterdiscordctl
 sudo chmod +x betterdiscordctl
 sudo mv betterdiscordctl /usr/local/bin
-betterdiscordctl install
+betterdiscordctl install > /dev/null
 cd ~/ && sudo rm -rf ~/betterdiscordctl > /dev/null
 
 # Installing Fonts
 echo "🢒 Installing and Configuring Fonts"
-cd ~/ && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip && sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts > /dev/null
+cd ~/ && wget -q https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip && sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts > /dev/null
 echo " "
 
 # Setup Configs
@@ -41,7 +41,7 @@ echo "🢒 Configuring dunst"
 echo "🢒 Configuring polybar"
 echo "🢒 Configuring alacritty"
 echo " Configuring betterdiscord"
-cd ~/ && git clone https://github.com/0xGast/hord-fast-rice && cd ~/hord-fast-rice && BetterDiscord && cp plugins ~/.config/BetterDiscord/ && cp themes ~/.config/BetterDiscord/ && cd ~/hord-fast-rice && rm -rf BetterDiscord && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice > /dev/null
+cd ~/ && git clone https://github.com/0xGast/hord-fast-rice > /dev/null && cd ~/hord-fast-rice && BetterDiscord && cp plugins ~/.config/BetterDiscord/ && cp themes ~/.config/BetterDiscord/ && cd ~/hord-fast-rice && rm -rf BetterDiscord && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice > /dev/null
 
 # Add Permissions
 echo "🢒 Configuring Executables"
