@@ -41,7 +41,7 @@ echo "🢒 Configuring dunst"
 echo "🢒 Configuring polybar"
 echo "🢒 Configuring alacritty"
 echo " Configuring betterdiscord"
-cd ~/ && git clone --quiet https://github.com/0xGast/hord-fast-rice && cd ~/hord-fast-rice && BetterDiscord && cp plugins ~/.config/BetterDiscord/ && cp themes ~/.config/BetterDiscord/ && cd ~/hord-fast-rice && rm -rf BetterDiscord && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice > /dev/null
+cd ~/ && git clone --quiet https://github.com/0xGast/hord-fast-rice && cd ~/hord-fast-rice && BetterDiscord && cp -r plugins ~/.config/BetterDiscord/ && cp -r themes ~/.config/BetterDiscord/ && cd ~/hord-fast-rice && rm -rf BetterDiscord && cp -r * ~/.config/ && cd ~/ && rm -rf hord-fast-rice > /dev/null
 
 # Add Permissions
 echo "🢒 Configuring Executables"
