@@ -45,8 +45,14 @@ cd ~/ && git clone https://github.com/0xGast/hord-fast-rice > /dev/null && cd ~/
 
 # Add Permissions
 echo "🢒 Configuring Executables"
-cd ~/.config/ && sudo chmod +x * && sudo chmod +x */*/ && sudo chmod +x */*/* && sudo chmod +x */*/*/* > /dev/null
+# do chmod +x to every single file inside ~/.config/
+sudo chmod +x ~/.config/bspwm/*
+sudo chmod +x ~/.config/sxhkd/*
+sudo chmod +x ~/.config/zathura/*
+sudo chmod +x ~/.config/dunst/*
+sudo chmod +x ~/.config/bspwm/bar/*
+sudo chmod +x ~/.config/bspwm/alacritty/*
+sudo chmod +x ~/.config/bspwm/bin/*
 echo " "
-
 
 echo "🢒 Everything has been Installed! Please Log Out and choose BSPWM from the 3 Dots in the Login page!"
