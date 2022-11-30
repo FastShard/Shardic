@@ -36,6 +36,14 @@
    WinKey + MBRClick = Resize Window
    ```
 
+5. THEMES
+
+   ```
+   WinKey + LAlt + Space = Theme Selector
+   
+   First Install themes at https://github.com/fastshard/themes
+   ```
+
 # Installation
 
 1. Install the Rice ( Auto )
