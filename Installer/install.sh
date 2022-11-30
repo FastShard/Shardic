@@ -1,4 +1,4 @@
-clear
+clear && curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/ascii.txt
 
 # Update the system
 echo "🢒 Updating the system"
