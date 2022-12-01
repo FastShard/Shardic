@@ -42,6 +42,9 @@ echo "🢒 Configuring polybar"
 echo "🢒 Configuring alacritty"
 echo " Configuring betterdiscord"
 
+sleep 2s
+sudo clear && curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | sh
+
 # Add Permissions
 echo "🢒 Configuring Executables"
 # do chmod +x to every single file inside ~/.config/
@@ -53,5 +56,7 @@ sudo chmod +x ~/.config/bspwm/bar/*
 sudo chmod +x ~/.config/bspwm/alacritty/*
 sudo chmod +x ~/.config/bspwm/bin/*
 echo " "
+
+cd ~/.config/fastshard/hord/ && sudo cp -r ~/.config/
 
 echo "🢒 Everything has been Installed! Please Log Out and choose BSPWM from the 3 Dots in the Login page!"
