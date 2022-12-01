@@ -1,8 +1,9 @@
-# 🍁 Hord [ BSPWM ]
+# ⚪ Shardic - [ BSPWM ]
 
-![image](https://user-images.githubusercontent.com/117211251/204068505-ee1de7d1-0b0e-4cc4-ad58-4f2e172320dc.png)
+![image](https://user-images.githubusercontent.com/117211251/204979641-e6c3a9aa-608d-4f78-bdbc-72ab7216d47b.png)
 
-![image](https://user-images.githubusercontent.com/117211251/204068509-3926865b-8363-4d9e-81f7-56d3edaea968.png)
+![image](https://user-images.githubusercontent.com/117211251/204979799-4241c391-a832-4f3b-acbc-d8ff5a0b8cc6.png)
+
 
 # Keybinds
 
