@@ -43,7 +43,7 @@ echo "🢒 Configuring alacritty"
 echo " Configuring betterdiscord"
 
 sleep 2s
-sudo clear && curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | sh
+sudo curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | sh
 
 # Add Permissions
 echo "🢒 Configuring Executables"
