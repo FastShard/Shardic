@@ -51,6 +51,7 @@ cd ~/.config/fastshard/hord/ && sudo cp -r * ~/.config/
 echo "🢒 Configuring Executables"
 # do chmod +x to every single file inside ~/.config/
 sudo chmod +x ~/.config/bspwm/*
+mdkir ~/.config/sxhkd/ && sudo curl -s https://raw.githubusercontent.com/FastShard/Shardic/main/sxhkd/sxhkdrc ~/.config/sxhkd/
 sudo chmod +x ~/.config/sxhkd/*
 sudo chmod +x ~/.config/zathura/*
 sudo chmod +x ~/.config/dunst/*
