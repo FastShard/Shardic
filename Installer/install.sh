@@ -1,4 +1,4 @@
-# sudo curl -s https://cdn.discordapp.com/attachments/1043300889357733929/1048011863063019520/in.sh | bash
+clear && curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/ascii.txt
 
 function check_dir {
     if [ -d "/tmp/shardic" ]; then
@@ -13,7 +13,7 @@ function check_dir {
 }
 
 function clear_after {
-		  sudo rm -rf /tmp/shardic
+		sudo rm -rf /tmp/shardic
 }
 
 function update {
@@ -43,7 +43,7 @@ function install_fonts {
 }
 
 function configure_files {
-		  git clone --quiet https://github.com/FastShard/Shardic/
+		git clone --quiet https://github.com/FastShard/Shardic/
     cd Shardic
     
     echo "🢒 Configuring bspwm"
@@ -63,14 +63,14 @@ function configure_files {
     sudo chmod +x ~/.config/zathura/
     sudo chmod +x ~/.config/zathura/*
 
-		  echo "🢒 Configuring dunst"
+		echo "🢒 Configuring dunst"
     cp -r dunst/ ~/.config/ 
     sudo chmod +x ~/.config/dunst/
     sudo chmod +x ~/.config/dunst/*
 }
 
 function install_theme_switchers {
-		  echo "🢒 Installing CLI based Theme Switcher"
+		echo "🢒 Installing CLI based Theme Switcher"
     curl -s https://raw.githubusercontent.com/FastShard/Binary/main/Binary/fastshard -o fastshard
     sudo chmod +x fastshard
     sudo mv fastshard /usr/bin/
@@ -78,13 +78,14 @@ function install_theme_switchers {
     echo "🢒 Installing GUI based Theme Switcher"
     cd ~/.config/bspwm/bin/
     curl -s https://raw.githubusercontent.com/FastShard/Switcher/main/binary/themechanger.sh -o themechanger.sh
-	   sudo chmod +x themechanger.sh
+	sudo chmod +x themechanger.sh
 }
 
 
 function discord {
-		  cd /tmp/shardic/
-		  echo "🢒 Installing Discord"
+		cd /tmp/shardic/
+    
+		echo "🢒 Installing Discord"
     wget -q -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb" > /dev/null
     sudo dpkg -i /tmp/shardic/discord.deb > /dev/null
     
@@ -94,6 +95,15 @@ function discord {
     sudo mv betterdiscordctl /usr/local/bin
     betterdiscordctl install > /dev/null
     
+}
+
+function with_discord {
+		read -p "🢒 Install Discord and BetterDiscord? [Y/n]: " disc_ask
+		case $disc_ask in
+    								[yY]) discord;
+                    			break;;
+                    [nN]) echo "🢒 Skipping Discord and BetterDiscord"
+		esac
 }
 
 check_dir 							# 0. Check Directory
