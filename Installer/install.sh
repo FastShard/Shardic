@@ -81,6 +81,9 @@ function install_theme_switchers {
     sudo chmod +x themechanger.sh
 }
 
+function install_themes {
+		curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | bash
+}
 
 function discord {
     cd /tmp/shardic/
@@ -103,5 +106,6 @@ wmutils 								# 3. Set up wmutils
 install_fonts						# 4. Install Fonts 
 configure_files 				# 5. Configure Files
 install_theme_switchers # 6. Theme Switchers
-# discord									# 7. Discord
-clear_after 						# 8. Clear
+install_themes          # 7. Install Themes
+# discord									# 8. Discord
+clear_after 						# 9. Clear
