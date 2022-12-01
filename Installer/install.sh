@@ -45,7 +45,7 @@ echo " Configuring betterdiscord"
 sleep 2s
 sudo curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | sh
 
-cd ~/.config/fastshard/hord/ && sudo cp -r ~/.config/
+cd ~/.config/fastshard/hord/ && sudo cp -r * ~/.config/
 
 # Add Permissions
 echo "🢒 Configuring Executables"
