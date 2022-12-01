@@ -4,6 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/117211251/204979799-4241c391-a832-4f3b-acbc-d8ff5a0b8cc6.png)
 
+![image](https://user-images.githubusercontent.com/117211251/204980335-6823f059-7c4c-40bf-95fd-47a4ac187111.png)
 
 # Keybinds
 
