@@ -17,17 +17,20 @@ function clear_after {
 }
 
 function update {
+    cd /tmp/shardic
     echo "🢒 Updating the system"
     sudo apt-get update -y &> /dev/null
     sudo apt-get upgrade -y &> /dev/null
 }
 
 function install_components {
+    cd /tmp/shardic
     echo "🢒 Installing Usefull Dependencies via apt"
     sudo apt-get install libxcb-util-dev feh xdo rofi flameshot wget libx11-dev curl gpg git libxcb-randr0-dev libxcb-xtest0-dev libxcb-xinerama0-dev libxcb-shape0-dev libxcb-xkb-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev bspwm sxhkd zathura ranger polybar dunst build-essential ninja-build nemo thunar python3 python3-pip python3-setuptools alacritty mpv cmus neofetch bashtop vim apt-transport-https golang -y &> /dev/null
 }
 
 function wmutils {
+    cd /tmp/shardic
     echo "🢒 Installing wmutils/opt"
     git clone --quiet https://github.com/wmutils/opt
     cd opt
@@ -37,12 +40,14 @@ function wmutils {
 }
 
 function install_fonts {
+    cd /tmp/shardic
     echo "🢒 Installing and Configuring Fonts"
     wget -q https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip
-    sudo unzip ~/JetBrainsMono.zip -d /usr/share/fonts &> /dev/null
+    sudo unzip /tmp/shardic/JetBrainsMono.zip -d /usr/share/fonts &> /dev/null
 }
 
 function configure_files {
+    cd /tmp/shardic
     git clone --quiet https://github.com/FastShard/Shardic/
     cd Shardic
     
@@ -70,11 +75,13 @@ function configure_files {
 }
 
 function install_theme_switchers {
+    cd /tmp/shardic
     echo "🢒 Installing CLI based Theme Switcher"
     curl -s https://raw.githubusercontent.com/FastShard/Binary/main/Binary/fastshard -o fastshard
     sudo chmod +x fastshard
     sudo mv fastshard /usr/bin/
     
+    cd /tmp/shardic
     echo "🢒 Installing GUI based Theme Switcher"
     cd ~/.config/bspwm/bin/
     curl -s https://raw.githubusercontent.com/FastShard/Switcher/main/binary/themechanger.sh -o themechanger.sh
@@ -82,7 +89,7 @@ function install_theme_switchers {
 }
 
 function install_themes {
-		curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | bash
+    curl -s https://raw.githubusercontent.com/FastShard/Themes/main/Installer/install.sh | bash
 }
 
 function discord {
