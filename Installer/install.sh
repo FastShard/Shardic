@@ -5,6 +5,7 @@ function check_dir {
       echo "🢒 Temp folder already exists"
       sudo rm -rf /tmp/shardic
       echo "🢒 Deleted Temp folder"
+      mkdir /tmp/shardic
     else
       mkdir /tmp/shardic/
       echo "🢒 Temp folder created"
