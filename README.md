@@ -51,7 +51,7 @@
 1. Install the Rice ( Auto )
 
     ```bash
-    sudo curl -s https://raw.githubusercontent.com/FastShard/Shardic/main/Installer/install.sh -o install.sh && bash install.sh
+    sudo curl -s https://raw.githubusercontent.com/FastShard/Shardic/main/Installer/install.sh -o install.sh && sudo chmod +x install.sh && bash install.sh
     ```
 <br />
 
